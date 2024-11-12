@@ -52,11 +52,24 @@ console.log('Escola '.concat(escola).concat('!'))
 const escola = "cod3r"
 console.log(escola.replace(3, 'e'))
 
+templateString - usado para melhor concatenar frases ou valores 
+mantndo a boa aparência do código. Tal função permite maior maneabilidade 
+das Strings na formação das linhas;
+const nome = 'Rebeca'
+const template = `
+    olá 
+    ${nome}!`
+    console.log(concatenacao, template)
 
+    Ainda sobre a ferramenta, também é possível chamar uma função dentro 
+    do templateString, como por exemplo deixar as letras em caixa alta...
+
+        const up = texto => texto.toUpperCase()
+        console.log(`ei... ${up('cuidado')}!`)
 
 */
 
 //ÁREA DE TESTE
 
-const escola = "cod3r"
-console.log(escola.replace(3, 'e'))
+const up = texto => texto.toUpperCase()
+console.log(`ei... ${up('cuidado')}!`)
